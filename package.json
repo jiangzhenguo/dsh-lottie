@@ -1,0 +1,68 @@
+{
+  "name": "@jiangzhenguo/dsh-lottie-player",
+  "version": "1.2.0",
+  "description": "A Lottie JSON and .lottie animation player in the DeepSeek Harness right sidebar.",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "client.source.js",
+    "loader.js",
+    "sample.json",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "README.md",
+    "icon.svg"
+  ],
+  "scripts": {
+    "build": "esbuild client.source.js --bundle --format=iife --platform=browser --external:react --outfile=client.js --minify",
+    "check": "node --check index.js && node --check loader.js && node --check client.source.js && node --check client.js",
+    "test": "node --test loader.test.js"
+  },
+  "dependencies": {
+    "fflate": "^0.8.3",
+    "lottie-web": "^5.13.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0"
+  },
+  "author": "jiangzhenguo",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jiangzhenguo/dsh-lottie.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jiangzhenguo/dsh-lottie/issues"
+  },
+  "homepage": "https://github.com/jiangzhenguo/dsh-lottie#readme",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "lottie",
+    "dotlottie",
+    "animation",
+    "plugin"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-sidebar-right"
+      ]
+    }
+  }
+}

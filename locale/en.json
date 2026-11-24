@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Lottie player",
+    "description": "Preview Lottie animations in the right sidebar. Open the right sidebar, choose Lottie player, then use the built-in sample, open a local JSON or .lottie file, or load an HTTP(S) URL. Supports multi-animation packages, packaged images, play, pause, restart, loop, and speed controls. Input files are limited to 10 MiB; standalone JSON must embed external images as data URLs. Remote URLs are fetched by your browser and must allow cross-origin requests."
+  }
+}

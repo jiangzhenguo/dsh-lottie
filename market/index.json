@@ -1,0 +1,88 @@
+{
+  "format": 1,
+  "title": {
+    "en": "Jiang's DSH plugins",
+    "zh": "姜振国的 DSH 插件"
+  },
+  "description": {
+    "en": "Community plugins for DeepSeek Harness, including the Lottie player.",
+    "zh": "DeepSeek Harness 社区插件，包括 Lottie 播放器。"
+  },
+  "metadata": {
+    "categories": {
+      "animation": {
+        "title": {
+          "en": "Animation and media",
+          "zh": "动画与媒体"
+        }
+      }
+    },
+    "labels": {
+      "lottie": {
+        "title": {
+          "en": "Lottie",
+          "zh": "Lottie"
+        }
+      },
+      "dotlottie": {
+        "title": {
+          "en": "dotLottie",
+          "zh": "dotLottie"
+        }
+      },
+      "sidebar": {
+        "title": {
+          "en": "Right sidebar",
+          "zh": "右侧栏"
+        }
+      }
+    }
+  },
+  "plugins": [
+    {
+      "name": "@jiangzhenguo/dsh-lottie-player",
+      "title": {
+        "en": "Lottie player",
+        "zh": "Lottie 播放器"
+      },
+      "description": {
+        "en": "Play Lottie JSON and .lottie animations in the right sidebar, with packaged images, multiple animations, playback speed, looping, and a seekable progress bar.",
+        "zh": "在右侧栏播放 Lottie JSON 和 .lottie 动画，支持包内图片、多动画切换、倍速、循环和可拖动进度条。"
+      },
+      "icon": "../icon.svg",
+      "author": "jiangzhenguo",
+      "homepage": "https://github.com/jiangzhenguo/dsh-lottie#readme",
+      "repository": {
+        "url": "https://github.com/jiangzhenguo/dsh-lottie"
+      },
+      "metadata": {
+        "category": "animation",
+        "keywords": [
+          "lottie",
+          "dotlottie",
+          "animation",
+          "dsh",
+          "right sidebar",
+          "动画"
+        ],
+        "labels": [
+          "lottie",
+          "dotlottie",
+          "sidebar"
+        ]
+      },
+      "versions": [
+        {
+          "version": "1.3.0",
+          "publishTimestamp": 1795492455,
+          "source": {
+            "type": "npm"
+          },
+          "engines": {
+            "dsh": ">=0.2.2-rc.5"
+          }
+        }
+      ]
+    }
+  ]
+}

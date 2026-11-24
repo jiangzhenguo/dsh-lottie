@@ -29,6 +29,21 @@
 
 ## 安装
 
+### 从插件市场安装
+
+本仓库同时发布 DSH plugin market index format 1 索引：
+
+```text
+https://raw.githubusercontent.com/jiangzhenguo/dsh-lottie/main/market/index.json
+```
+
+1. 在 DSH **插件** 页面的实验性插件下启用 **自定义插件索引**。
+2. 打开 **发现**，选择 **添加索引源**。
+3. 粘贴上面的 HTTPS 地址并保存。
+4. 搜索 **Lottie 播放器**，核对安装来源为 npm 包 `@jiangzhenguo/dsh-lottie-player@1.3.0`，然后安装。
+
+索引源由 DSH 按 Profile 保存。索引内容缓存约 10 分钟，版本更新后稍候再刷新即可。
+
 ### 从 npm 获取发布包
 
 在任意用于存放 DSH 插件的工作目录中执行：
